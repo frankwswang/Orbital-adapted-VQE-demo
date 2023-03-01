@@ -34,12 +34,12 @@ Compared to the vanilla VQE, the other two versions of VQE that utilize the opti
 
 | VQE method | Ground-state energy | Relative runtime |
 | :---:      | ---:                | ---:             |
-|VQE-V       | -15.5947 Ha         | 4.0              |
-|VQE-A-T     | -15.6215 Ha         | 1.7              |
-|VQE-A-S     | -15.6213 Ha         | 1.0              |
+| VQE-V      | -15.5947 Ha         | 4.0              |
+| VQE-A-T    | -15.6215 Ha         | 1.7              |
+| VQE-A-S    | -15.6213 Ha         | 1.0              |
 
-![](plots/energy.png)
-![](plots/runtime.png)
+![ ](plots/energy.png)
+![ ](plots/runtime.png)
 
 It should be noted that the spin-orbital configurations (in addition to the restricted Hartree-Fock state as the reference configuration) used to build the quantum circuits for all three VQE methods are restricted to single and double excitations. Also, the fermionic encoding for all three VQEs is restricted to the Jordan-Wigner transformation. The above results can also be obtained from the notebook `compareVQEs.ipynb`.
 
