@@ -36,7 +36,7 @@ To be noted, the configuration interaction states used in all three VQE methods 
 Overall, we have demonstrated the practicality of combining basis set optimization with VQE algorithms in the case of BeH2. Since the basis set optimization is done classically and is entirely independent of the downstream VQE algorithm. Technically, our method can be applied to other variants of VQE methods. We would also like to further test out the performance of such classical-quantum hybrid methods on actual NIQS devices in the future.
 
 ## References
-[1] Wang, W. (2022). Quiqbox: a highly customizable basis set generator. In APS March Meeting Abstracts (Vol. 2022, pp. Z01-004).
+[1] Wang, W., & Whitfield, J. D. (2022). Basis set generation and optimization in the NISQ era with Quiqbox. jl. arXiv preprint arXiv:2212.04586.
 
 [2] Setia, K., Chen, R., Rice, J. E., Mezzacapo, A., Pistoia, M., & Whitfield, J. D. (2020). Reducing qubit requirements for quantum simulations using molecular point group symmetries. Journal of Chemical Theory and Computation, 16(10), 6091-6097.
 
