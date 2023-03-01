@@ -8,11 +8,11 @@ This code repository is a demonstration of applying top-level basis set (orbital
 
 ## Three VQEs, one molecule
 
-We demonstrate three different ways to tackle the problem of finding the ground-state energy of molecule BeH2 using a variational quantum eigensolver (VQE) with respect to minimal basis sets using PennyLane. 
+We demonstrate three different ways to tackle the problem of finding the ground-state energy of molecule BeH2 using a variational quantum eigensolver (VQE) with respect to minimal basis sets using PennyLane.
 
 ### Vanilla VQE with STO-3G (VQE-V)
 
-The first notebook, `Main0_VQE_vanillaY.ipynb` is a "vanilla" application of the PennyLane library, using the default STO-3G basis set parameters, the `default.qubit` simulator, and the `AllSinglesDoubles` circuit template as the VQE ansatz. The constructed Hamilotian (after jordan-wigner transformation) has 666 Pauli strings to measure and requires 14 qubits to build the corresponding quantum circuit.
+The first notebook, `Main0_VQE_vanillaY.ipynb` is a "vanilla" application of the PennyLane library, using the default STO-3G basis set parameters, the `default.qubit` simulator, and the `AllSinglesDoubles` circuit template as the VQE ansatz. The constructed Hamilotian (after Jordan-Wigner transformation) has 666 Pauli strings to measure and requires 14 qubits to build the corresponding quantum circuit.
 
 ### Adapt-VQE with optimized STO-3G
 
@@ -33,15 +33,15 @@ In the notebook `Main2_VQE_adaptY_activeSpaceY.ipynb`, we present our computatio
 Compared to the vanilla VQE, the other two versions of VQE that utilize the optimized STO-3G basis set provided significant improvement of calculating the ground-state energy of colinear BeH2 (with Be-H bound length being 1.3264 Å):
 
 | VQE method | Ground-state energy | Relative runtime |
-| :---:      | ---:                | ---:             | 
-|VQE-V       | -15.5947            | 4.0              |
-|VQE-A-T     | -15.6215            | 1.7              |
-|VQE-A-S     | -15.6213            | 1.0              |
+| :---:      | ---:                | ---:             |
+|VQE-V       | -15.5947 Ha         | 4.0              |
+|VQE-A-T     | -15.6215 Ha         | 1.7              |
+|VQE-A-S     | -15.6213 Ha         | 1.0              |
 
 ![](plots/energy.png)
 ![](plots/runtime.png)
 
-It should be noted that the configuration interaction (CI) states used in all three VQE methods are restricted to single and double excitations. The above results can also be obtained from the notebook `compareVQEs.ipynb`.
+It should be noted that the spin-orbital configurations (in addition to the restricted Hartree-Fock state as the reference configuration) used to build the quantum circuits for all three VQE methods are restricted to single and double excitations. Also, the fermionic encoding for all three VQEs is restricted to the Jordan-Wigner transformation. The above results can also be obtained from the notebook `compareVQEs.ipynb`.
 
 ## Conclusion
 
