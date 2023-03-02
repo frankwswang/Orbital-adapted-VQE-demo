@@ -45,7 +45,7 @@ It should be noted that the spin-orbital configurations (in addition to the rest
 
 ## Conclusion
 
-Overall, we have demonstrated the practicality of combining basis set optimization with VQE algorithms in the case of BeH₂. Since the basis set optimization is done classically and is entirely independent of the downstream VQE algorithm. Technically, our method can be applied to other variants of VQE methods. We would also like to further test out the performance of such classical-quantum hybrid methods on actual NIQS devices in the future.
+Overall, we have demonstrated the practicality of combining basis set optimization with VQE algorithms in the case of BeH₂. Since the basis set optimization is done classically and is agnostic to the downstream VQE algorithm. Technically, our method can be applied to other variants of VQE methods. We would also like to test further the performance of such a hybrid classical-quantum approach with more VQE algorithms on actual NISQ devices in the future.
 
 ## Software environment
 
