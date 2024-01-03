@@ -63,7 +63,7 @@ Overall, we have demonstrated the practicality of combining basis set optimizati
 
 ## References
 
-[1] Wang, W., & Whitfield, J. D. (2022). Basis set generation and optimization in the NISQ era with Quiqbox. jl. arXiv preprint arXiv:2212.04586.
+[1] Wang, W., & Whitfield, J. D. (2023). Basis set generation and optimization in the NISQ era with Quiqbox.jl. Journal of Chemical Theory and Computation, 19(22), 8032-8052.
 
 [2] Setia, K., Chen, R., Rice, J. E., Mezzacapo, A., Pistoia, M., & Whitfield, J. D. (2020). Reducing qubit requirements for quantum simulations using molecular point group symmetries. Journal of Chemical Theory and Computation, 16(10), 6091-6097.
 
